@@ -1,22 +1,6 @@
-mkdir /working
-cd /working
-# if [ -f /sbin/apt ] ||  [ -f /usr/bin/apt ] || [ -f /bin/apt ]; then
-# 	apt update -y
-# 	apt install git python-is-python3 python3 wget build-essential -y
-# else 
-# 	apk update
-# 	apk add bash diffutils findutils wget
-# fi
+wget "https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz"
+tar -xf https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+./ngrok config add-authtoken 2SPhhGuL5yc48a51XVukQbTiZ0j_rGyiNEkpkjH7GwXpvXAJ
 
-# apt update && apt upgrade -y 
-# # apt install docker docker-compose
-# sudo snap install zerotier-cli
+ngrok tcp 8022
 
-
-# apk add alsa-lib-dev qt6-qtwebengine-dev libusb-dev sndio-dev libunwind-dev sdl12-compat-dev gcc make cmake meson cargo clang
-# apk add libxml2-dev g++ alsa-lib-dev bison curl-dev flex glib-dev glu-dev iasl kbuild mesa-dev libvncserver-dev libcap-dev libvpx-dev libxcomposite-dev libxinerama-dev libxslt-dev libxcursor-dev libxrandr-dev lvm2-dev libxmu-dev linux-pam-dev opus-dev pulseaudio-dev qt5-qtbase-dev qt5-qtx11extras-dev qt5-qttools-dev sdl12-compat-dev xorg-server-dev yasm python3-dev
-# wget "https://download.virtualbox.org/virtualbox/7.1.8/VirtualBox-7.1.8.tar.bz2"
-# tar -xf VirtualBox-7.1.8.tar.bz2
-# cd VirtualBox-7.1.8
-# ./configure
-# make -j$(nproc)
