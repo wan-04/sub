@@ -1,7 +1,16 @@
 mkdir /working
 cd /working
-apt update && apt upgrade -y 
-apt install docker docker-compose
+# if [ -f /sbin/apt ] ||  [ -f /usr/bin/apt ] || [ -f /bin/apt ]; then
+# 	apt update -y
+# 	apt install git python-is-python3 python3 wget build-essential -y
+# else 
+# 	apk update
+# 	apk add bash diffutils findutils wget
+# fi
+
+# apt update && apt upgrade -y 
+# # apt install docker docker-compose
+# sudo snap install zerotier-cli
 
 
 # apk add alsa-lib-dev qt6-qtwebengine-dev libusb-dev sndio-dev libunwind-dev sdl12-compat-dev gcc make cmake meson cargo clang
